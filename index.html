@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lusitana&display=swap" rel="stylesheet">
+
+    <title>Quiz</title>
+</head>
+<div class=" wrapper">
+    <header class="header">
+        <div>
+            <h1>Which Downton Abbey Character Are You?</h1>
+            <button><a href="#quiz" class="takeTest">Find out here</a></button>
+        </div>
+    </header>
+
+    <body>
+        <section id="quiz">
+            <div id="questions" class="questions">
+                <form>
+                    <div>
+                        <p>Are you often involved in scandal?</p>
+                        <input type="radio" id="yes" name="scandal" value="yes" required><label for="yes">Yes,
+                            it keeps life interesting!</label>
+                        <input type="radio" id="no" name="scandal" value="no"><label for="no">I try to avoid it, but it
+                            somehow always finds me...</label>
+                        <input type="radio" id="sometimes" name="scandal" value="sometimes"><label for="sometimes">Not
+                            really</label>
+                    </div>
+
+
+                    <div>
+                        <p>How would others describe your personality?</p>
+                        <input type="radio" id="mess" name="personality" value="mess" required><label for="mess">They're
+                            a
+                            mess but they're trying!</label>
+                        <input type="radio" id="witty" name="personality" value="witty"><label for="witty">Clever,
+                            always
+                            has a witty response</label>
+                        <input type="radio" id="angel" name="personality" value="angel"><label for="angel">Just like,
+                            super
+                            nice.</label>
+                    </div>
+
+                    <div>
+                        <p>A distant relative unexpectadely comes to visit and asks for a place to stay, how do you
+                            respond?</p>
+                        <input type="radio" id="oblige" name="visitor" value="oblige" required><label for="obige">Of
+                            course!</label>
+                        <input type="radio" id="fee" name="visitor" value="fee"><label for="fee">Tell them they can
+                            stay, for a fee..</label>
+                        <input type="radio" id="bye" name="visitor" value="nye"><label for="visitor">Ask them how they
+                            got
+                            your address.</label>
+                    </div>
+
+                    <div class="submit">
+                        <a href="#answers" class="sent">
+                            <input type="submit" class="submitTest" value="Submit!">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="answers" class="answers">
+            <div class="results">
+                <h2>You are most like:</h2>
+                <div>
+                    <img src="images/loading.gif" alt="" class="result">
+                    <h2 class="picture">...</h2>
+                </div>
+                <input type="reset" class="resetTest" value="Try Again">
+
+        </section>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+<script src="project.js"></script>
+</body>
+
+</html>
